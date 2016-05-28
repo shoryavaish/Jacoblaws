@@ -1,78 +1,54 @@
-p{
-font-family:"proxima-nova";
-line-height: 1.6em;
-    text-transform: none;
-    letter-spacing: 0px;
-    font-weight: 400;
-    font-style: normal;
-    font-size: inherit;
+/*reset default styles */
+*{
+    padding:0;
+    margin:0;
 }
-p {
-    display: block;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-	margin:30px;
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+/* default global style */
+body{
+    font-size: 17px;
+    line-height: 24px;
+    font-family: helevetica;
 }
 img{
-//position:absolute;
-margin:10px;
-display:block;
-}
-h1{font-size:26px;}
-h1,h2,h3,h4,h5,h6{
-font-family: "proxima-nova";
-    line-height: 1.2em;
-    text-transform: none;
-    letter-spacing: 0px;
-    font-weight: 600;
-    font-style: normal;
-    margin: 1em 0;
-}
-#main
-{
-width:100%;
-height:100%;
-}
-#left{
-width:20%;
-height:610px;
-
-float:left;
- 
-}
-#center{
-width:80%;
-height:100%;
-//background-color:#AE5656;
-float:left;
-box-shadow: 10px 10px 5px #888888;
+    width: 100%;
 }
 
-#ad{
-cursor:pointer;
-width:1020px;
-height:600px;
-margin-left:10%;
+/* custom styling */
+
+aside{
+    position: absolute;
+    width: 25%;
+    height: 100%;
+
 }
-#dropnav 
-{width:100%;height:45px;background-color:#b0b0b0;text-align:center; margin-top:5px;} /* Changes the height and bg color of the main menu */
-
-#dropnav ul li
-{display:inline; float:left; list-style:none; margin:10px; position:relative; height:25px; width: 150px;text-align:center;} /* only edit the last 2 items - sets the width of the main menu */
-
-#dropnav li a
-{color:#600000;font-size:100%;text-align:center;text-decoration:none;} /* Changes the link color of items on the main menu */
-
-#dropnav li a:hover
-{color:#596365; text-decoration:none;}/* Changes the hover color of items on the main menu */
-
-#dropnav li ul
-{margin:0px; padding:0px; display:none; position:absolute; left:0px; z-index: 99; top:25px; background-color:white;} /* Only edit the last 2 items - set the top margin and background color of the submenus */
-
-#dropnav li:hover ul
-{display:block; width:200px;height:300;background-color:white;margin-left:0;border: 5px solid; border-radius: 10px; border-color: #c0c0c0;} /* sets the width of the submenus */
-
-
-li#main  {margin-bottom: 0px;padding-left:0;align:center;} /* Sets the padding of items in the main menu */
+.logo{
+    width: 180px;
+    margin: 100px auto;
+}
+.navigation{
+    position: relative;
+    font-weight: bold;
+    font-size: 17px;
+    text-align: center;
+}
+.navigation li{
+    display: block;
+    padding: 10px 0;
+}
+.navigation li a{
+    color: #000;
+}
+section{
+    position: relative;
+    width: 75%;
+    left: 25%;
+}
+.text-content{
+    padding: 50px 20px;
+}
