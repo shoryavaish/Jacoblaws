@@ -1,27 +1,27 @@
 <div>
 
-<script >
-images = new Array;
-images[0] = "images/york+house+1.jpg";
-images[1] = "images/447A2230.jpg";
-images[2] = "images/CartonLiving-Resize2.jpg";
-images[3] = "images/Carton-Kitchen3.jpg";
-images[4] = "images/loft+3.jpg";
-images[5] = "images/modern+beauty+6.jpg";
-images[6] = "images/row+house+7.jpg";
+<script  type="application/javascript" >
+imagesa = new Array;
+imagesa[0] = "images/york+house+1.jpg";
+imagesa[1] = "images/447A2230.jpg";
+imagesa[2] = "images/CartonLiving-Resize2.jpg";
+imagesa[3] = "images/Carton-Kitchen3.jpg";
+imagesa[4] = "images/loft+3.jpg";
+imagesa[5] = "images/modern+beauty+6.jpg";
+imagesa[6] = "images/row+house+7.jpg";
 setInterval(function()  {
 changeImage()
 }, 4000);
 x=0;
 function changeImage()
 {
-document.getElementById('ad').src = images[x];
+document.getElementById('ad').src = imagesa[x];
 if(x<6){
 x=x+1;}
-else if(x=7){
+else if(x==7){
 x=0;}
 }
 </script>
-<img id='ad' src="images/town+++style+1.jpg" style="margin-left:10px;">
+<img src="images/town+++style+1.jpg" id="ad" style="margin-left:10px;">
 
 </div>
