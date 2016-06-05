@@ -22,10 +22,9 @@ img{
 /* custom styling */
 
 aside{
-    position: absolute;
+    position: fixed;
     width: 25%;
     height: 100%;
-
 }
 .logo{
     width: 180px;
@@ -51,4 +50,16 @@ section{
 }
 .text-content{
     padding: 50px 20px;
+}
+.img-wrapper li{
+ display: inline-block;
+ width: 220px;
+ margin: 5px 3px;
+}
+.cont-wrapper{
+    width: 907px;
+}
+h3{
+    text-align: right;
+    color: rgba(0, 0, 0, 0.67);
 }

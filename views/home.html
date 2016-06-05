@@ -1,27 +1,5 @@
-<div>
-
-<script  type="application/javascript" >
-imagesa = new Array;
-imagesa[0] = "images/york+house+1.jpg";
-imagesa[1] = "images/447A2230.jpg";
-imagesa[2] = "images/CartonLiving-Resize2.jpg";
-imagesa[3] = "images/Carton-Kitchen3.jpg";
-imagesa[4] = "images/loft+3.jpg";
-imagesa[5] = "images/modern+beauty+6.jpg";
-imagesa[6] = "images/row+house+7.jpg";
-setInterval(function()  {
-changeImage()
-}, 4000);
-x=0;
-function changeImage()
-{
-document.getElementById('ad').src = imagesa[x];
-if(x<6){
-x=x+1;}
-else if(x==7){
-x=0;}
-}
-</script>
-<img src="images/town+++style+1.jpg" id="ad" style="margin-left:10px;">
-
+<div class="home-cont">
+	<div class="slider" ng-repeat="image in sliderImages">
+		<img src="{{image.img}}" alt="{{image.alt}}">
+	</div>
 </div>

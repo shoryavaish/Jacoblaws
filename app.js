@@ -1,4 +1,4 @@
-var app = angular.module('app', ['ui.router']);
+var app = angular.module('app', ['ui.router','ngAnimate']);
 
 app.config(function($stateProvider, $urlRouterProvider) {
     
@@ -18,6 +18,13 @@ app.config(function($stateProvider, $urlRouterProvider) {
             url: '/about',
             templateUrl: 'views/about.html',
             controller:'aboutController'
+        })
+
+        .state('portfolio', {
+            url: '/portfolio',
+            templateUrl: 'views/portfolio.html',
+            controller:'portfolioController'
         });
+
 
 });
