@@ -10,21 +10,21 @@ app.config(function($stateProvider, $urlRouterProvider) {
         .state('home', {
             url: '/home',
             templateUrl: 'views/home.html',
-            controller:'homeController'
+			controller:'homeController'
         })
         
 
         .state('about', {
             url: '/about',
             templateUrl: 'views/about.html',
-            controller:'aboutController'
+			controller:'aboutController'
         })
 
-        .state('portfolio', {
+		
+		.state('portfolio', {
             url: '/portfolio',
             templateUrl: 'views/portfolio.html',
             controller:'portfolioController'
         });
-
-
+		
 });

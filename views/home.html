@@ -1,5 +1,13 @@
-<div class="home-cont">
-	<div class="slider" ng-repeat="image in sliderImages">
-		<img src="{{image.img}}" alt="{{image.alt}}">
-	</div>
+<!--
+<div data-ng-controller="SliderController">
+		<slider images = "images" />
+</div>
+
+for slider
+-->
+<div class="home-cont" >
+
+	<div class="slide" ng-repeat= "image in sliders"  >
+	<img ng-src="{{image.src}}" title= "{{image.alt}}" />
+</div>
 </div>
