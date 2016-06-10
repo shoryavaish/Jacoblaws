@@ -22,9 +22,10 @@ img{
 /* custom styling */
 
 aside{
-    position: fixed;
+    position: absolute;
     width: 25%;
     height: 100%;
+
 }
 .logo{
     width: 180px;
@@ -51,6 +52,75 @@ section{
 .text-content{
     padding: 50px 20px;
 }
+
+/* For slider ...  */
+
+
+.slider img{
+	position: relative;
+	padding:5px;
+	width:98%;
+	height:650px;
+	margin: auto;
+	margin-top: 8px;
+}
+.slide{
+	position:relative;
+	top:0;
+	left:0;
+	box-shadow: 0px 0px 15px #999;
+}
+
+#arrowLeft{
+	position: absolute;
+	top: 300px;
+	left: 0px;
+	height: 100px;
+	width: 100px;
+}
+
+#arrowRight{
+	position: absolute;
+	top: 300px;
+	right: 10px;
+	height: 100px;
+	width: 100px;	
+}
+ 
+.slide.ng-hide-add, .slide.ng-hide-remove {
+  -webkit-transition:all linear 0.4s;
+  -moz-transition:all linear 0.4s;
+  -o-transition:all linear 0.4s;
+  transition:all linear 0.4s;
+  display:block!important;
+}
+ 
+.slide.ng-hide-add.ng-hide-add-active,.slide.ng-hide-remove {
+  opacity:0;
+}
+ 
+.slide.ng-hide-add,.slide.ng-hide-remove.ng-hide-remove-active {
+  opacity:1;
+}
+.pic-div
+{
+    position: absolute;
+    top: 570px;
+    right: 15px;
+    background-color: rgba(69, 66, 76, 0.87);
+    display: block;
+    height: 93px;
+    width: 200px;
+    text-align: center;
+    font-family: cursive;
+    text-transform: capitalize;
+    font-style: oblique;
+    color: darkseagreen;
+}
+h2.ng-binding {
+    margin-top: 10px;
+}
+/* ............... For index.html .............*/
 .img-wrapper li{
  display: inline-block;
  width: 220px;

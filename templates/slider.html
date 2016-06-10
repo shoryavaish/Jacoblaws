@@ -1,0 +1,29 @@
+<div class="slider" >
+
+	<div class="slide" ng-repeat= "image in images" ng-show="image.visible" >
+	<img ng-src="images/{{image.src}}" title= "{{image.title}}" />
+	<div class="pic-div"><h2>{{image.info}}</h2></div>
+	</div>
+
+	<div >
+	<a href="#" ng-click="prev()"><img src="images/left-arrow.png" id="arrowLeft" title="previous slide" /></a> 
+	<a href="#" ng-click="next()"><img src="images/right-arrow.png" id="arrowRight" title="next slide" /></a>
+	</div>  
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<script src="http://code.angularjs.org/1.2.9/angular-animate.min.js"></script>------in html page
+-->

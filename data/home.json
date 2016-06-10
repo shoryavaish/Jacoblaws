@@ -1,6 +1,6 @@
 {
 	"sliders":[
-		{"img" : "images/sliderImg01.jpg", "alt":""},
-		{"img" : "images/sliderImg01.jpg", "alt":""}
+		{"img" : "images/img1.png", "alt":""},
+		{"img" : "images/img2.jpg", "alt":""}
 	]
 }
