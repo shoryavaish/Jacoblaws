@@ -6,3 +6,9 @@
 	</ul>
 	<h3 class="proj-name">{{project.name}}</h3>
 </div>
+
+<div ng-controller="serviceController">
+<input type="text" data-ng-model="msg" />
+<button ng-click="msgBox()">Disp</button>
+<p>{{message}}</p>
+</div>
