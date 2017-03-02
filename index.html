@@ -3,21 +3,18 @@
 <head>
 
 
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-	    <!-- Bootstrap 3 css -->
-   <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">		
-    <link href="libs/bootstrap.css" rel="stylesheet">-->
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
 
-    <!-- JS (load angular, ui-router and animate files) -->
-    <script src="libs/angular.js"></script>
-    <script src="libs/angular-ui-router.min.js"></script>
+	<!-- JS (load angular, ui-router and animate files) -->
+	<script src="libs/angular.js"></script>
+	<script src="libs/angular-ui-router.min.js"></script>
 	<script src="libs/angular-animate.min.js"></script>
 	<!-- Angular-xeditable -->
-    <link href="libs/angular-xeditable/css/xeditable.css" rel="stylesheet" />
-    <script src="libs/angular-xeditable/js/xeditable.js"></script>
+	<link href="libs/angular-xeditable/css/xeditable.css" rel="stylesheet" />
+	<script src="libs/angular-xeditable/js/xeditable.js"></script>
 	<!-- Custom Js file -->
-    <script src="app.js"></script>
- 	 <script src="service.js"></script>
+	<script src="app.js"></script>
+	<script src="service.js"></script>
 
 </head>
 
@@ -25,33 +22,35 @@
 <body data-ng-app="app"  >
 
 
-
-
 <div class="container">
-    <aside>
-        <div class="logo">
-            <img src="images/jacoblaws.jpg" alt="logo" />
-        </div> 
+	<aside>
+
+		<div class="logo">
+			<img src="images/jacoblaws.jpg" alt="logo" />
+		</div> 
 		
-            <div data-ng-controller ="navController" >
-         <navigation name = "Home"></navigation>
-         <navigation name = "About"></navigation>
-		 <navigation name = "Portfolio"></navigation>
-      </div>
+		<div data-ng-controller ="navController" >
+			<navigation name = "Home"></navigation>
+			<navigation name = "About"></navigation>
+			<navigation name = "Portfolio"></navigation>
+	  	</div>
 
+	  	<plugin-links></plugin-links>
 
-	  </aside>
+	</aside>
 
-    <!-- MAIN CONTENT -->
-    <section>
-        <div data-ui-view></div>
-    </section>
+	<!-- MAIN CONTENT -->
+	<section>
+		<div data-ui-view></div>
+	</section>
 </div>
-    
+	
 <!-- Js Controller files -->
 <script src="Controllers/controller.js"></script>
 <script src="Controllers/navController.js"></script>
 <script src="Controllers/sliderController.js"></script>
+<script src="Controllers/plugins.js"></script>
+
 
 </body>
 </html>

@@ -9,8 +9,8 @@ app.directive('slider', function ($timeout) {
     restrict: 'AE',
 	templateUrl:"templates/slider.html",
     link: function (scope, elem, attrs) {
-		console.log(scope);
-		console.log(attrs);
+		// console.log(scope);
+		// console.log(attrs);
 		scope.currentIndex=0;
 
 		scope.next=function(){

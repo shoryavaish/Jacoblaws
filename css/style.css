@@ -178,3 +178,16 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
     -webkit-appearance: button;
     cursor: pointer;
 }
+.links img{
+    width: 40px;
+    display: inline-block;
+}
+.links{
+    position: fixed;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-right: 70%;
+}
+.links-bottom{
+    bottom: 0px;
+}
